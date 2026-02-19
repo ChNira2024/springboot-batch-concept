@@ -1,0 +1,50 @@
+niran@NIRANJAN-LAP MINGW64 /c/Workspace2/sringboot_batch_app (main)
+$ git remote add origin https://github.com/ChNira2024/springboot-batch-concept.git
+error: remote origin already exists.
+
+=>I got this issue becoz i have cloned this project from other github url..Then i modify based on spboot3.x...see the owner
+
+niran@NIRANJAN-LAP MINGW64 /c/Workspace2/sringboot_batch_app (main)
+$ git remote -v
+origin  https://github.com/ashokitschool/sringboot_batch_app.git (fetch)
+origin  https://github.com/ashokitschool/sringboot_batch_app.git (push)
+
+=>See already owner is "ashokit"..becoz of this i got issue..already exist...
+=>So Change remote to YOUR GitHub repo (Recommended): git remote set-url origin <destination-url>
+=>or u can remove existing then add ur url:  git remote remove origin 
+=>Here i am changing...
+
+niran@NIRANJAN-LAP MINGW64 /c/Workspace2/sringboot_batch_app (main)
+$ git remote set-url origin https://github.com/ChNira2024/springboot-batch-concept.git
+
+niran@NIRANJAN-LAP MINGW64 /c/Workspace2/sringboot_batch_app (main)
+$ git remote -v
+origin  https://github.com/ChNira2024/springboot-batch-concept.git (fetch)
+origin  https://github.com/ChNira2024/springboot-batch-concept.git (push)
+
+niran@NIRANJAN-LAP MINGW64 /c/Workspace2/sringboot_batch_app (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/ChNira2024/springboot-batch-concept.git'
+
+=>This issue saying your branch is wrong...
+niran@NIRANJAN-LAP MINGW64 /c/Workspace2/sringboot_batch_app (main)
+$ git branch
+* main
+
+niran@NIRANJAN-LAP MINGW64 /c/Workspace2/sringboot_batch_app (main)
+$ git push -u origin main
+
+Enumerating objects: 85, done.
+Counting objects: 100% (85/85), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (56/56), done.
+Writing objects: 100% (85/85), 813.46 KiB | 14.53 MiB/s, done.
+Total 85 (delta 19), reused 42 (delta 9), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (19/19), done.
+To https://github.com/ChNira2024/springboot-batch-concept.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+niran@NIRANJAN-LAP MINGW64 /c/Workspace2/sringboot_batch_app (main)
+
