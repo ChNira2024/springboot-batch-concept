@@ -1,8 +1,8 @@
-package in.ashokit.config;
+package in.niranjana.batch.config;
 
 import org.springframework.batch.item.ItemProcessor;
 
-import in.ashokit.entity.Customer;
+import in.niranjana.batch.entity.Customer;
 
 public class CustomerProcessor implements ItemProcessor<Customer, Customer> {
 
@@ -11,7 +11,7 @@ public class CustomerProcessor implements ItemProcessor<Customer, Customer> {
 
 		// logic
 
-		return item;
+		return item;  // i did not written any logic
 	}
 
 }

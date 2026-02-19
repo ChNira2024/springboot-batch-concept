@@ -1,4 +1,4 @@
-package in.ashokit.rest;
+package in.niranjana.batch.controller;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParameters;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class CustomerRestController {
+public class ReadDataFromCsvFile_StoreDB_UsingCsvFileLocation {
 
 	@Autowired
 	private JobLauncher jobLauncher;

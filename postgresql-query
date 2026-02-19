@@ -1,0 +1,12 @@
+create database springbootbatch;
+
+SELECT version();
+SELECT tablename FROM pg_tables WHERE schemaname = 'public';
+
+SELECT tablename FROM pg_tables WHERE tablename LIKE 'batch_%';
+SELECT current_database();
+
+
+select * from customers_info;
+truncate table customers_info;
+select count(*) from customers_info;

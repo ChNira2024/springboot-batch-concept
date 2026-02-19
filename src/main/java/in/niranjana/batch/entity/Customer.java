@@ -1,4 +1,4 @@
-package in.ashokit.entity;
+package in.niranjana.batch.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
